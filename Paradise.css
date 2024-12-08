@@ -1,0 +1,270 @@
+/* General Body Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #0b175a;
+    color: white;
+    padding: 2.5rem 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Header Container Layout */
+.header-container {
+    width: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo or Title Styling */
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: left;
+    flex-grow: 1; /* Center-aligns the title */
+    color: white;
+}
+
+/* Navigation Menu Styling */
+nav {
+    flex-grow: 2;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 2rem; /* Space between menu items */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #199494;
+    border-radius: 5px;
+}
+
+/* Search Bar Styling */
+#search-form {
+    display: flex; /* Ensures elements are aligned horizontally */
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    right: 2rem;
+    transform: translateY(-50%);
+}
+
+#search-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 0.5rem; /* Reduced margin to make the gap smaller */
+}
+
+#search-form button {
+    padding: 0.5rem 1rem; /* Proportional padding */
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #search-form {
+        position: static;
+        margin-top: 1rem;
+        transform: none; /* Reset for better responsiveness */
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}
+
+/* Main Content Section Styling */
+section {
+    padding: 2rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Recipe Container Styling */
+#recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Recipe Card Styling */
+.recipe-card {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    flex-shrink: 0;
+}
+
+/* About and Contact Form Styling */
+#about, #contact {
+    margin-top: 2rem;
+}
+
+
+/* Contact Form Styling */
+#contact {
+    background-color: #f8f8f8;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.6);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d84315;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjusting the layout for smaller screens */
+    #search-form input {
+        width: 80%;
+    }
+    .recipe-card {
+        width: 45%;
+    }
+    form {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    #search-form input {
+        width: 90%;
+    }
+    .recipe-card {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="Paradise.css">
+</head>
+<body>
+    <!-- Header with Menu and Search Bar -->
+    <header>
+        <div class="header-container">
+            <!-- Logo or Title -->
+            <h1>FOOD RECIPE</h1>
+    
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav><br>
+    
+            <!-- Search Form -->
+            <form id="search-form">
+                <input type="text" id="search-bar" placeholder="Search for recipes...">
+                <button type="submit">Search</button>
+            </form><br>
+        </div>
+    </header>
+    
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Food Recipe</h2>
+        <p>Your Go-To Place For Delicious Recipes!</p>
+    </section>
+
+    <!-- Recipe Section -->
+    <section>
+        <div id="recipe-container"></div>
+        <button id="load-more">More Recipes</button>
+    </section>
+
+    <!-- About Section at the Bottom -->
+    <section id="about">
+        <h2>About Food Recipe</h2>
+        <p>Food Recipe helps you discover new and exciting recipes based on your preferences. Whether you're a novice or an expert chef, we have something for you! With a wide range of recipes from various cuisines, you can explore different flavors and cooking techniques. The platform allows you to filter recipes based on dietary needs, ingredients on hand, or desired preparation time. Our easy-to-use interface ensures that you can find the perfect recipe for any occasion, whether you're planning a family meal, hosting a dinner party, or looking for a quick snack. Additionally, Recipe Finder provides helpful tips, nutritional information, and step-by-step instructions to make your cooking experience enjoyable and stress-free.</p>
+    </section>
+
+    <!-- Contact Form Section at the Bottom -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Recipe</p>
+    </footer>
+
+    <script src="Paradise.js"></script>
+</body>
+</html>
